@@ -3,7 +3,7 @@
 ## Overview
 The AUTO Trade Program is a fully functional automated trading bot designed to trade financial instruments using the OANDA API. It integrates technical analysis indicators, including RSI and EMA, with PyQt5 for a professional user interface and `mplfinance` for real-time charting.
 ___
-[img](https://github.com/LoQiseaking69/simplefx/blob/main/IMG_9963.jpeg)
+![img](https://github.com/LoQiseaking69/simplefx/blob/main/IMG_9963.jpeg)
 ___
 
 ## Features
