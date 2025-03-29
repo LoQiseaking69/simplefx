@@ -19,10 +19,10 @@ ___
 ├── chart_window.py         # Live charting module
 ├── main.py                 # PyQt5 UI and app control
 ├── styles.py               # UI styling
-├── config.json             # Config file for parameters
-├── trade_log.txt           # Trading activity logs
-├── chart_window_log.txt    # Chart window logs
-├── trading_bot_log.txt     # Main application logs
+├── config.json             # Config file for parameters (local; make yourself or ask for template)
+├── trade_log.txt           # Trading activity logs *(will generate after first run)
+├── chart_window_log.txt    # Chart window logs **
+├── trading_bot_log.txt     # Main application logs **
 ├── README.md               # Project documentation
 ```
 
