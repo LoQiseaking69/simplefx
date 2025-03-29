@@ -59,6 +59,3 @@ All parameters can be adjusted in `config.json`:
 
 ## License
 This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-@LoQiseaking69
