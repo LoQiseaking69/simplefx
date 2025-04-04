@@ -7,6 +7,7 @@ from src.trader import run_bot
 from src.chart_window import ChartWindow
 from src.signal_emitter import notifier
 from src.config_manager import load_config
+import styles  # styles.py is in the root directory
 
 logging.basicConfig(filename="gui_log.txt", level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
@@ -33,19 +34,26 @@ class TradingBotApp(QWidget):
         super().__init__()
         self.setWindowTitle("AUTO Trader GUI")
         self.setGeometry(100, 100, 800, 500)
+        self.setStyleSheet(styles.WINDOW_STYLE)
 
         self.bot_thread = None
         self.chart_window = None
 
         self.layout = QVBoxLayout()
         self.status_label = QLabel("Status: Idle")
+        self.status_label.setStyleSheet(styles.LABEL_STYLE)
+
         self.log_output = QTextEdit()
         self.log_output.setReadOnly(True)
+        self.log_output.setStyleSheet(styles.LOG_TEXT_STYLE)
 
         self.btn_start = QPushButton("Start")
         self.btn_stop = QPushButton("Stop")
         self.btn_reload = QPushButton("Reload Config")
         self.btn_chart = QPushButton("Show Chart")
+
+        for btn in [self.btn_start, self.btn_stop, self.btn_reload, self.btn_chart]:
+            btn.setStyleSheet(styles.BUTTON_STYLE)
 
         self.btn_start.clicked.connect(self.start_bot)
         self.btn_stop.clicked.connect(self.stop_bot)
