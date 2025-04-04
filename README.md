@@ -1,4 +1,4 @@
-#Automated OANDA Trading Bot
+# Automated OANDA Trading Bot
 
 ## Overview
 `A production-grade automated trading bot built for the OANDA platform. It leverages RSI and EMA technical indicators to make informed trade decisions and features a PyQt5 GUI, real-time charting with `mplfinance`, modular architecture, CLI control, and a scheduler.
